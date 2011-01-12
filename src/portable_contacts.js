@@ -7,6 +7,9 @@ var portable_contacts = function(res, res) {
   /* Portable contacts end point. */
   var R = model.RFactory();
   R.User.index({}, function(users) {
+    users = users.map(function(user) {
+      return user.json()
+    });
     var result = { startIndex: 0
                  , itemsPerPage: users.length
                  , totalResults: users.length

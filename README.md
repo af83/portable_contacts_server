@@ -1,13 +1,20 @@
 # Portable contact server
 
-Simple proof of concept of [[http://portablecontacts.net/draft-spec.html]].
+Simple proof of concept of http://portablecontacts.net/draft-spec.html.
 
 Use it with:
+
 * node
 * mongodb
 * rest-mongo
 
 Implements only some parts of **filtering** section, without **sorting**. 
+
+## Install
+
+    $> git submodule update --init --recursive
+    $> node src/scripts/load_data.js examples/fake.json
+    $> node src/server.js
 
 
 ## License

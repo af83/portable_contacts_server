@@ -6,14 +6,8 @@
   require.paths.unshift(__dirname + '/../vendors/' + submodule);
 });
 
-var config = {
-  port: 8001
-  , db: {
-    db_name: 'portable_contacts_dev'
-  }
-};
-
 var connect = require('connect')
+  , config = require('./config').config
   , model = require('./model')
   , portable_contacts = require('./portable_contacts').connector
   ;
