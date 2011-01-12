@@ -3,12 +3,12 @@ var stools = require('nodetk/server_tools');
 var model = require('./model');
 
 
-var portable_contacts = function(res, res) {
+var portable_contacts = exports.portable_contacts = function(req, res) {
   /* Portable contacts end point. */
   var R = model.RFactory();
   R.User.index({}, function(users) {
     users = users.map(function(user) {
-      return user.json()
+      return user.json();
     });
     var result = { startIndex: 0
                  , itemsPerPage: users.length

@@ -1,6 +1,6 @@
 # Portable contact server
 
-Simple proof of concept of http://portablecontacts.net/draft-spec.html.
+Simple proof of concept of [Portable contacts specification](http://portablecontacts.net/draft-spec.html).
 
 Use it with:
 
@@ -16,6 +16,7 @@ Implements only some parts of **filtering** section, without **sorting**.
     $> node src/scripts/load_data.js examples/fake.json
     $> node src/server.js
 
+Nodetk is not vendorized using submodules. Please report to [nodetk](https://github.com/AF83/nodetk) to install it.
 
 ## License
 

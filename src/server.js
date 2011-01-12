@@ -1,6 +1,5 @@
 // Add location of submodules to path:
-[ 'nodetk/src'
-, 'rest-mongo/src'
+[ 'rest-mongo/src'
 , 'connect/lib'
 ].forEach(function(submodule) {
   require.paths.unshift(__dirname + '/../vendors/' + submodule);

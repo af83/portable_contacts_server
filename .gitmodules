@@ -1,9 +1,6 @@
 [submodule "vendors/rest-mongo"]
 	path = vendors/rest-mongo
 	url = git://github.com/AF83/rest-mongo.git
-[submodule "vendors/nodetk"]
-	path = vendors/nodetk
-	url = git://github.com/AF83/nodetk.git
 [submodule "vendors/connect"]
 	path = vendors/connect
 	url = git://github.com/senchalabs/connect.git

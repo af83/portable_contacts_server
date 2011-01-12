@@ -9,7 +9,7 @@ var model = require('../model')
 model.init(config);
 var R = model.RFactory();
 
-var load_data = function(data_file, callback) {
+var load_data = exports.load_data = function(data_file, callback) {
   fs.readFile(data_file, function(err, data) {
     if(err) throw err;
     var json_users = JSON.parse(data);
