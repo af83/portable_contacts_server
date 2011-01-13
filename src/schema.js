@@ -9,7 +9,7 @@ exports.schema = {
 
       properties: {
         id: {type: "string"},
-        displayname: {type: "string"},
+        displayName: {type: "string"},
         emails: {type: "object"},
         accounts: {type: "object"}
       }
