@@ -1,0 +1,12 @@
+{ "name": "portable-contacts-server"
+, "version": "0.1.0"
+, "description": "Portable contact server."
+, "repository": { "type": "git"
+                 , "url": "http://github.com/AF83/portable_contacts_server.git"
+                }
+, "author": "François de Metz <fdemetz@af83.com>"
+, "licenses": [{ "type": "AGPL"}]
+, "dependencies": { "connect":""
+                  , "rest-mongo":""
+                  }
+}
