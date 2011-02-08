@@ -30,8 +30,6 @@ Not implemented. Only support json output.
     $> node src/scripts/load_data.js examples/fake.json
     $> node src/server.js
 
-Nodetk is not vendorized using submodules. Please report to [nodetk](https://github.com/AF83/nodetk) to install it.
-
 ## Example
 
     $> wget "http://localhost:8001/portable_contacts?filterBy=emails.value&filterOp=equals&filterValue=wendy.wellesley%40example.com"

@@ -1,5 +1,5 @@
 
-var stools = require('nodetk/server_tools')
+var router = require('connect').router
   , model = require('./model')
   , parseurl = require('url').parse
 ;
@@ -29,11 +29,15 @@ var portable_contacts = exports.portable_contacts = function(req, res) {
                  };
     res.writeHead(200, {'Content-Type': 'application/json'});
     res.end(JSON.stringify(result));
-  }, function(err) {stools.server_error(res, err)});
+  }, function(err) {
+    res.writeHead(500, {'Content-Type': 'application/json'});
+    res.end();
+    console.error(err);
+  });
 };
 
 exports.connector = function() {
-  var routes = {GET: {}};
-  routes.GET['/portable_contacts'] = portable_contacts;
-  return stools.get_connector_from_str_routes(routes);
+  return router(function(app) {
+    app.get('/portable_contacts', portable_contacts);
+  });
 };
